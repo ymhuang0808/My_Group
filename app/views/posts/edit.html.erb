@@ -1,0 +1,8 @@
+<div class="span12">
+	<%= form_for [@group,@post] do |f| %>
+		<%= f.text_area :content, :input_html => {:class => "input-xxlarge"} %>
+		<div class="form-actions">
+			<%= f.submit "送出", :disable_with => "Submiting", :class => "btn btn-primary" %>
+		</div>
+	<% end %>
+</div>
